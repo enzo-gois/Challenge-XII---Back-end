@@ -1,4 +1,3 @@
--- CreateTable
 CREATE TABLE `Users` (
     `id` CHAR(36) NOT NULL,
     `first_name` VARCHAR(191) NOT NULL,
@@ -6,7 +5,7 @@ CREATE TABLE `Users` (
     `email` VARCHAR(191) NOT NULL,
     `country` VARCHAR(191) NOT NULL,
     `city` VARCHAR(191) NOT NULL,
-    `referral_code` VARCHAR(191) NOT NULL,
+    `referral_code` VARCHAR(191) NULL,
     `own_car` BOOLEAN NOT NULL,
     `car_type` VARCHAR(191) NOT NULL,
 

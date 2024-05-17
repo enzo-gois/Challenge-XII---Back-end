@@ -14,7 +14,7 @@ model User {
   email         String @unique
   country       String
   city          String
-  referral_code String
+  referral_code String?
   own_car       Boolean
   car_type      String
 
