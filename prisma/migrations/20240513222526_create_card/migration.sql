@@ -1,4 +1,3 @@
--- CreateTable
 CREATE TABLE `Cards` (
     `id` CHAR(36) NOT NULL,
     `imagem_url` VARCHAR(191) NOT NULL,
