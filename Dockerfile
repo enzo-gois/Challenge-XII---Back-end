@@ -1,10 +1,14 @@
-FROM node:20:alpine 
+FROM node:20-alpine 
 
-WORKDIR /usr/src
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
 
 COPY . .
 
-RUN npm install --quiet --no-optional --no-fund --loglevel=error
+RUN npx prisma generate
 
 RUN npm run build
 
