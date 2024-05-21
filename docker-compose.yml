@@ -11,6 +11,6 @@ services:
     environment:
       - DATABASE_URL=${DATABASE_URL}
     ports:
-      - '80:3001'
+      - '3001:3001'
     volumes:
       - ./src:/app/src

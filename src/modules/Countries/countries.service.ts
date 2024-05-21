@@ -1,15 +1,19 @@
-import { Injectable } from "@nestjs/common";
-import axios from "axios";
+import { Injectable } from '@nestjs/common';
+import axios from 'axios';
 
 @Injectable()
 export class CountriesService {
   async getCountries(): Promise<string[]> {
     try {
-      const response = await axios.get('https://restcountries.com/v3.1/all');
-      const countries = response.data.map((country: any) => country.name.common);
+      const response = await axios.get(
+        'https://countriesnow.space/api/v0.1/countries',
+      );
+      const countries = response.data.data.map(
+        (country: any) => country.country,
+      );
       return countries;
     } catch (error) {
       throw new Error('Failed to fetch countries');
     }
   }
-} 
+}
