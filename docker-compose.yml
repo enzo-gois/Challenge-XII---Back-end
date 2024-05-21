@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  myride_backend:
+    container_name: myride_backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+    ports:
+      - '3001:3001'
+    volumes:
+      - ./src:/app/src
