@@ -20,6 +20,7 @@ e coloque o seguinte conteudo
 
 DATABASE_URL = link pro seu banco de dados mySQL
 link do banco neste formato =>   "mysql://nomedeusuario:senha@localhostOuOLinkDoSeuBanco:porta/nomeDoBanco?schema=public"
+url de teste = "mysql://admin:Password1527@myridedbeg.cricim8k85x5.us-east-2.rds.amazonaws.com:3306/myridedb?schema=public"
 
 ```
 
